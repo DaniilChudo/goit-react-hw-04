@@ -1,0 +1,21 @@
+.card {
+  width: 100%; /* Займає всю ширину контейнера */
+  height: 200px; /* Фіксована висота */
+  overflow: hidden; /* Сховати переповнені елементи */
+  border-radius: 5px; /* Закруглені кути */
+  cursor: pointer; /* Курсор при наведенні */
+  display: flex; /* Центруємо вміст */
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 100%; /* Займає всю ширину картки */
+  height: 100%; /* Займає всю висоту картки */
+  object-fit: cover; /* Заповнює картку, зберігаючи пропорції */
+  transition: transform 0.2s; /* Анімація при наведенні */
+}
+
+.image:hover {
+  transform: scale(1.05); /* Збільшення картинки при наведені */
+}

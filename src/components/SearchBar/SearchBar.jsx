@@ -16,7 +16,7 @@ const SearchBar = ({ onSubmit }) => {
   };
 
   return (
-    <header>
+    <header className={styles.header}>
       <form className={styles.form} onSubmit={handleSubmit}>
         <input
           type="text"
@@ -26,7 +26,9 @@ const SearchBar = ({ onSubmit }) => {
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
         />
-        <button type="submit">Search</button>
+        <button className={styles.searchBtn} type="submit">
+          Search
+        </button>
       </form>
     </header>
   );

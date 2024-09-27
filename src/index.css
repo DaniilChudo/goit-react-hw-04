@@ -2,9 +2,10 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  padding: 0px;
 }
 
 body {
-  background-color: blanchedalmond;
+  background-color: rgb(97, 174, 215);
   margin: 0px;
 }
