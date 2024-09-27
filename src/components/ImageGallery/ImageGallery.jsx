@@ -7,7 +7,7 @@ const ImageGallery = ({ images, onImageClick }) => {
         <li key={image.id}>
           <ImageCard
             image={image}
-            onClick={() => onImageClick(image.urls.regular)}
+            onClick={() => onImageClick(image)} // Передаємо весь об'єкт image
           />
         </li>
       ))}

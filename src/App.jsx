@@ -29,7 +29,7 @@ const App = () => {
           headers: {
             Authorization:
               "Client-ID GJpULUubW5j4nubTev8A2anTrfbZ392WuYV3qj6CDK0",
-          }, // Замість YOUR_ACCESS_KEY вставте ваш ключ
+          },
         }
       );
       setImages((prevImages) => [...prevImages, ...response.data.results]);
