@@ -1,6 +1,8 @@
 import Modal from "react-modal";
 import { useEffect } from "react";
 
+Modal.setAppElement("#root"); // Встановлюємо основний елемент додатку
+
 const ImageModal = ({ image, onClose }) => {
   const imageUrl = image.urls?.regular; // Отримуємо regular версію
 
