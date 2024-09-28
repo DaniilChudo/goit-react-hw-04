@@ -8,7 +8,7 @@ import ErrorMessage from "./components/ErrorMessage/ErrorMessage";
 import ImageModal from "./components/ImageModal/ImageModal";
 import { Toaster, toast } from "react-hot-toast";
 
-import "./App.css"; // Залиште цей файл для загальної стилізації
+import "./App.css";
 
 const App = () => {
   const [images, setImages] = useState([]);

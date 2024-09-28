@@ -1,0 +1,20 @@
+.loadBtn {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 40px;
+  width: 90px;
+  border: none;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  background-color: #ff6f20;
+  margin-left: 40px;
+  transition: transform 0.2s;
+}
+
+.loadBtn:hover {
+  color: white;
+  background-color: #f75600;
+  box-shadow: 0 0 8px 4px greenyellow;
+  transform: translateY(-5px);
+}

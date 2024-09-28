@@ -1,12 +1,12 @@
 .list {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 колонки */
-  grid-template-rows: repeat(3, auto); /* 3 рядки */
-  gap: 10px; /* Відстань між картками */
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 10px;
   padding-top: 15px;
   margin: 0;
-  list-style: none; /* Видаляємо маркери списку */
+  list-style: none;
   & li {
-    box-shadow: 4px 4px 0px 0px lightpink;
+    box-shadow: 0 0 4px 2px #ffb84d;
   }
 }

@@ -1,20 +1,20 @@
 import Modal from "react-modal";
 import { useEffect } from "react";
 
-Modal.setAppElement("#root"); // Встановлюємо основний елемент додатку
+Modal.setAppElement("#root");
 
 const ImageModal = ({ image, onClose }) => {
-  const imageUrl = image.urls?.regular; // Отримуємо regular версію
+  const imageUrl = image.urls?.regular;
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = "auto"; // Відновлюємо прокрутку при закритті модалки
+      document.body.style.overflow = "auto";
     };
   }, []);
 
   if (!imageUrl) {
-    return null; // Якщо немає URL, нічого не рендеримо
+    return null;
   }
 
   return (
@@ -24,7 +24,7 @@ const ImageModal = ({ image, onClose }) => {
       style={{
         overlay: {
           backgroundColor: "rgba(0, 0, 0, 0.8)",
-          overflow: "hidden", // Забороняє прокрутку заднього фону
+          overflow: "hidden",
         },
         content: {
           display: "flex",
@@ -33,23 +33,23 @@ const ImageModal = ({ image, onClose }) => {
           background: "transparent",
           border: "none",
           padding: 0,
-          overflow: "hidden", // Забороняє прокрутку контенту модалки
+          overflow: "hidden",
         },
       }}
     >
       <div
         style={{ cursor: "pointer", width: "100%", height: "100%" }}
-        onClick={onClose} // Закриваємо модалку при кліку на область
+        onClick={onClose}
       >
         <img
           src={imageUrl}
-          alt={image.alt_description} // Додаємо alt текст
+          alt={image.alt_description}
           style={{
             maxHeight: "90vh",
             maxWidth: "90vw",
             display: "block",
             margin: "auto",
-          }} // Зображення не виходить за межі вікна
+          }}
         />
       </div>
     </Modal>

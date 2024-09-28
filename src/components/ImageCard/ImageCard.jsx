@@ -1,4 +1,4 @@
-import styles from "./ImageCard.module.css"; // імпортуємо CSS файл
+import styles from "./ImageCard.module.css";
 
 const ImageCard = ({ image, onClick }) => {
   return (
